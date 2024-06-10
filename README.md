@@ -43,7 +43,7 @@ One system developed in the UK, later called the Gee system (known as ‘QH’ d
 <img width="100%" align="left" src="assets\gee-diagram2.jpg">
 
 
-At the receiver end, the pulses were observed on a simple oscilloscope that didn’t have trigger circuitry. The circuitry would direct the pulses onto two traces. The master transmitter pulse was observed on both traces. The next received pulse would be sent to the top trace. The pulse after that was sent to the second trace. The final pulse was sent to both traces, but it happened to be a double pulse, so it could be distinguished. The operator would measure the distance between the pulses, and the intersecting hyperbolae would provide a position fix.
+At the receiver end, the pulses were observed on a little display (known as an oscilloscope) that charted the pulse blips over time. The circuitry would direct the pulses onto two visual graphical traces. The master transmitter pulse was observed on both traces. The next received pulse would be sent to the top trace. The pulse after that was sent to the second trace. The final pulse was sent to both traces, but it happened to be a double pulse, so it could be distinguished. The operator would measure the distance between the pulses, and the intersecting hyperbolae would provide a position fix.
 
 The photo here shows a Gee receiver and display unit.
 

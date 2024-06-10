@@ -9,7 +9,7 @@ In the introduction of a book called [Longitude](https://www.amazon.co.uk/Longit
 
 The problem of identifying precise longitude was of high importance, because sailors would routinely perish, because of the difficulty of determining where land was.
 
-**Latitude** (how far up or down the globe) was not too difficult to figure out, because it could be judged by the length of the day (if you’re at the equator, then the day would be very long, and if you were north or south, the day would shorten) or you could search for particular stars.
+**Latitude** (how far up or down the globe) was not too difficult to figure out, because it could be determined in several ways; by knowing the season and the length of the day, or the angle of the sun, or you could search for particular stars (for instance the North Star, and measuring the angle of it from the horizon).
 
 However, **longitude** starts at an arbitrary man-made position (it happens to be in Greenwich, London). There are many stories of ships traveling the wrong distance east or west around the globe, and (if not crashing into rocks), poor longitude estimates resulted in overshooting or undershooting land, and, with depleting food, and risk of scurvy, the captain deciding to turn around, and traveling for days or weeks, only to then realize that the first direction must have been correct. Just on one voyage, two thousand sailors on four warships died for want of better navigation, and eventually, the UK government issued a reward (worth millions in today’s money) for a solution. It went unclaimed for more than half a century.
 
@@ -98,7 +98,7 @@ There appears to be a frequency synthesizer, two simultaneous RF receivers (so t
 
 # Summary
 
-It’s easy to take satellite-based navigation systems for granted these days, but there was a time when thousands of lives would frequently be lost due to the difficulty of determining latitude. Although that was solved in the 18th century, there were new demands during WW2.
+It’s easy to take satellite-based navigation systems for granted these days, but there was a time when thousands of lives would frequently be lost due to the difficulty of determining longitude. Although that was solved in the 18th century, there were new demands during WW2.
 
 Prior to GPS deployment, hyperbolic navigation systems were the state-of-the-art, a couple of them being QH and QM, or Gee and Decca, respectively. The Decca system relied on phase measurement to place the receiver on hyperbolic lines or lanes and, with multiple transmitters, onto a grid of lanes. After WW2, the system was adapted for commercial use and ran successfully until the year 2000. An example of a Decca navigation system receiver was examined briefly.
 

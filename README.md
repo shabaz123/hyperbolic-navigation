@@ -1,7 +1,7 @@
 
 
 # Introduction
-We often take satellite navigation systems such as GPS for granted, and it got me thinking about how dependent we are on that technology, and how on earth people managed in the past. This article documents my findings.
+I often take satellite navigation systems such as GPS for granted, and it got me thinking about how dependent we are on that technology, and how on earth people managed in the past. This article documents my findings.
 
 # Longitude and Time-keeping
 

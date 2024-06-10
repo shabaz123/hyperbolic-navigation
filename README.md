@@ -5,7 +5,7 @@ I often take satellite navigation systems such as GPS for granted, and it got me
 
 # Longitude and Time-keeping
 
-In the introduction of a book called [Longitude](https://www.amazon.co.uk/Longitude-Genius-Greatest-Scientific-Problem/dp/080271529X), Neil Armstrong mentions how Pope Alexander IV drew a vertical line from North to South, and assigned all lands to the two top maritime powers of Europe: all lands to the west to Spain, and all to the right to Portugal. The problem was, no-one knew where the line fell!
+In the introduction of a book called [Longitude](https://www.amazon.co.uk/Longitude-Genius-Greatest-Scientific-Problem/dp/080271529X), Neil Armstrong mentions how [Pope Alexander IV](https://en.wikipedia.org/wiki/Pope_Alexander_IV) drew a vertical line from North to South, and assigned all lands to the two top maritime powers of Europe: all lands to the west to Spain, and all to the right to Portugal. The problem was, no-one knew where the line fell!
 
 The problem of identifying precise longitude was of high importance, because sailors would routinely perish, because of the difficulty of determining where land was.
 

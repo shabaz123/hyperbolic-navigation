@@ -3,6 +3,10 @@
 # Introduction
 I often take satellite navigation systems such as GPS for granted, and it got me thinking about how dependent we are on that technology, and how on earth people managed in the past. This article documents my findings.
 
+It covers the concept of latitude and longitude, and how navigation was performed around the 18th century using star or sun location, and measuring time. 
+
+By the 20th century, during WW2, techniques were developed that relied on multiple ground station radio transmitters sending signals with a certain phase relationship or with a particular pulse sequence. Radio receivers on ships and aircraft would be used to measure the phase difference or pulse timing between the two signals, and using that to approach a location fix.
+
 # Longitude and Time-keeping
 
 In the introduction of a book called [Longitude](https://www.amazon.co.uk/Longitude-Genius-Greatest-Scientific-Problem/dp/080271529X), Neil Armstrong mentions how [Pope Alexander IV](https://en.wikipedia.org/wiki/Pope_Alexander_IV) drew a vertical line from North to South, and assigned all lands to the two top maritime powers of Europe: all lands to the west to Spain, and all to the right to Portugal. The problem was, no-one knew where the line fell!

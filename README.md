@@ -15,11 +15,11 @@ In the introduction of a book called [Longitude](https://www.amazon.co.uk/Longit
 
 The problem of identifying precise longitude was of high importance, because sailors would routinely perish, because of the difficulty of determining where land was.
 
-<img width="100%" align="left" src="assets\diag-latitude.jpg">
+<img width="100%" align="left" src="assets\diag-lat-lon-explained.jpg">
 
 **Latitude** (angle indicating how far up or down the globe) was not too difficult to figure out, because it could be determined in several ways; for instance you could search for particular stars (for instance the North Star, and measuring the angle of it from the horizon). A quick daytime method would be to measure the angle of the sun from your visible horizon, which is known as the sun's angle of elevation, and subtract it from 90. Then, a correction is needed because the earth tilts up to plus or minus 23.4 degrees over the course of the year; it's seasonal (about +23.4 degrees in mid-June, and -23.4 degrees in mid-December, and is close to zero mid-March and mid-September), is easy to calculate, and is called the sun's angle of declination. You'd need to subtract the magnitude of the angle of declination, to get an accurate result.
 
-<img width="100%" align="left" src="assets\diag-lat-lon-explained.jpg">
+<img width="100%" align="left" src="assets\diag-latitude.jpg">
 
 However, **longitude** starts at an arbitrary man-made position (it happens to be in Greenwich, London). There are many stories of ships traveling the wrong distance east or west around the globe, and (if not crashing into rocks), poor longitude estimates resulted in overshooting or undershooting land, and, with depleting food, and risk of scurvy, the captain deciding to turn around, and traveling for days or weeks, only to then realize that the first direction must have been correct. Just on one voyage, two thousand sailors on four warships died for want of better navigation, and eventually, the UK government issued a reward (worth millions in today’s money) for a solution. It went unclaimed for more than half a century.
 

@@ -3,7 +3,7 @@
 # Introduction
 I often take satellite navigation systems such as GPS for granted, and it got me thinking about how dependent we are on that technology, and how on earth people managed in the past. This article documents my findings.
 
-It covers the concept of latitude and longitude, and how navigation was performed around the 18th century using star or sun location, and measuring time. 
+It covers the concept of latitude and longitude, and how navigation was performed on ships using star or sun location, and measuring time. 
 
 By the 20th century, during WW2, techniques were developed that relied on multiple ground station radio transmitters sending signals with a certain phase relationship or with a particular pulse sequence. Radio receivers on ships and aircraft would be used to measure the phase difference or pulse timing between the two signals, and using that to approach a location fix.
 

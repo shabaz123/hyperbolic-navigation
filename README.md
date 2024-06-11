@@ -5,7 +5,9 @@ I often take satellite navigation systems such as GPS for granted, and it got me
 
 It covers the concept of latitude and longitude, and how navigation was performed on ships using star or sun location, and measuring time. 
 
-By the 20th century, during WW2, techniques were developed that relied on multiple ground station radio transmitters sending signals with a certain phase relationship or with a particular pulse sequence. Radio receivers on ships and aircraft would be used to measure the phase difference or pulse timing between the two signals, and using that to approach a location fix.
+By the 20th century, during WW2, techniques were developed that relied on multiple ground station radio transmitters sending signals with a certain phase relationship to each other, or with a particular pulse sequence between them. Radio receivers on ships and aircraft would be used to measure the phase difference or pulse timing between signals from the multiple transmitters. The article discusses how that information could trace out invisible hyperbolic lanes over land or sea, and grids of hyperbolic lines.
+
+There is also a brief look at how GPS works.
 
 # Longitude and Time-keeping
 

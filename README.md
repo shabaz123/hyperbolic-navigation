@@ -9,7 +9,11 @@ In the introduction of a book called [Longitude](https://www.amazon.co.uk/Longit
 
 The problem of identifying precise longitude was of high importance, because sailors would routinely perish, because of the difficulty of determining where land was.
 
-**Latitude** (how far up or down the globe) was not too difficult to figure out, because it could be determined in several ways; by knowing the season and the length of the day, or the angle of the sun, or you could search for particular stars (for instance the North Star, and measuring the angle of it from the horizon).
+<img width="100%" align="left" src="assets\diag-latitude.jpg">
+
+**Latitude** (angle indicating how far up or down the globe) was not too difficult to figure out, because it could be determined in several ways; for instance you could search for particular stars (for instance the North Star, and measuring the angle of it from the horizon). A quick daytime method would be to measure the angle of the sun from your visible horizon, which is known as the sun's angle of elevation, and subtract it from 90. Then, a correction is needed because the earth tilts up to plus or minus 23.4 degrees over the course of the year; it's seasonal (about +23.4 degrees in mid-June, and -23.4 degrees in mid-December, and is close to zero mid-March and mid-September), is easy to calculate, and is called the sun's angle of declination. You'd need to subtract the magnitude of the angle of declination, to get an accurate result.
+
+<img width="100%" align="left" src="assets\diag-lat-lon-explained.jpg">
 
 However, **longitude** starts at an arbitrary man-made position (it happens to be in Greenwich, London). There are many stories of ships traveling the wrong distance east or west around the globe, and (if not crashing into rocks), poor longitude estimates resulted in overshooting or undershooting land, and, with depleting food, and risk of scurvy, the captain deciding to turn around, and traveling for days or weeks, only to then realize that the first direction must have been correct. Just on one voyage, two thousand sailors on four warships died for want of better navigation, and eventually, the UK government issued a reward (worth millions in today’s money) for a solution. It went unclaimed for more than half a century.
 
@@ -102,9 +106,31 @@ It’s easy to take satellite-based navigation systems for granted these days, b
 
 Prior to GPS deployment, hyperbolic navigation systems were the state-of-the-art, a couple of them being QH and QM, or Gee and Decca, respectively. The Decca system relied on phase measurement to place the receiver on hyperbolic lines or lanes and, with multiple transmitters, onto a grid of lanes. After WW2, the system was adapted for commercial use and ran successfully until the year 2000. An example of a Decca navigation system receiver was examined briefly.
 
+There were many other hyperbolic or hyperbolic-like navigation systems that are not covered here. Some systems were incrementally improved upon, and others were independently developed. 
+
 Thanks for reading.
 
-## Further Reading
+## Further Reading: Quick Look at Satellite-Based Navigation: How Does it Work?
+
+Now that pre-GPS techniques have been discussed, you may be interested in how GPS and other Global Navigation Satellite Systems (GNSS) function.
+
+There are well over a hundred satellites in orbit, which transmit signals containing timing information and satellite position. The timing information comes from an ultra-precise clock inside each satellite. The satellite position can be pictured by imagining a sphere surrounding the planet. The satellite position can be defined using two angles: the angle from one of the poles, and the angle around the sphere (a bit like longitude), which meet up at the satellite location on that sphere.
+
+The timing information, and the satellite position information, are transmitted at a frequency of about 1.5 GHz, and, due to the distance of the satellite orbit, it takes about 10 msec to arrive on Earth.
+
+The received signal is very weak and would be impossible to pull out of the noise, so it is sent relatively slowly (50 bits per second), with each bit of data being encoded with a special (much faster) binary pattern before it’s transmitted. The GPS receiver tries to match up the pattern. When it does that, then, mathematically, the signal can be recovered from the noise; the pattern is known as a pseudo-random sequence (although it contains the word ‘random’, it’s not random in the normal sense; it looks random to a casual viewer, but in reality it has a pattern that can be exactly replicated by the receiver), and the matching effect is known as autocorrelation. Together, it is known as Spread Spectrum communication. The signal directed toward Earth is invisible by the time it arrives (since it’s below the noise floor!) until autocorrelation is achieved by the receiving system.
+
+Another neat trick is that many satellites can transmit simultaneously, each with a different pseudo-random sequence, and the receiver can, in parallel, perform multiple matching operations, to achieve autocorrelation for each signal.
+
+The receiver is designed to have the ability to time things too, but not to the same accuracy as the satellites! The receiver will locally timestamp the arrival time of each message, and then compare that local timestamp with the time encoded in the satellite signals. Once there are signals from at least four satellites (the more the better!), then there is enough information to use simultaneous equations, to solve for the location of the receiver.
+
+Today, there are more global navigation systems than just GPS out there; there is also Galileo (European), BeiDou (Chinese) and GLONASS (Russian), all operating in a similar way. There are also more geographically-specific navigation systems too. A GNSS receiver (colloquially known as a GPS receiver) can receive information from several of the navigation systems, and therefore provide more accurate location information, by selecting based on received signal quality.
+
+In order to make use of GNSS, nowadays a single chip can be used. The chip will typically receive the RF signals, shift them to a much lower frequency, then perform the correlation operation, and then pre-programmed software inside the chip will compute the receiver location. The pre-programmed software has a model of the Earth, to try to reduce errors in altitude (height) measurement, say, above sea level. 
+
+The altitude is interesting to briefly consider; the earth isn’t spherical, it bulges a little, i.e. it is slightly ellipsoidal, plus, on top of that, sea level depends on gravity, and gravity isn’t constant across the earth. Where the earth is denser, it attracts more water, and the mean sea level rises there. There is an internal table of heights inside the chip, and the reported altitude takes that into account, to try to provide an altitude value that is referenced off that internal table of mean sea levels at the reported location. It’s known as an orthometric height. 
+
+## Further Reading (References)
 
 [Longitude](https://www.amazon.co.uk/Longitude-Genius-Greatest-Scientific-Problem/dp/080271529X) book by Dava Sobel
 

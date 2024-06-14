@@ -8,6 +8,21 @@
 
 <!-- css -->
 <style>
+    :root {
+        --min-vw: 414;
+        --max-vw: 768;
+        --min-h1-font-size: 32;
+        --max-h1-font-size: 48;
+        --min-p-font-size: 24;
+        --max-p-font-size: 32;
+
+        --rise: calc(var(--max-h1-font-size) - var(--min-h1-font-size));
+        --run: calc(var(--max-vw) - var(--min-vw));
+        --slope: calc(var(--rise) / var(--run));
+        
+        --risep: calc(var(--max-p-font-size) - var(--min-p-font-size));
+        --slopep: calc(var(--risep) / var(--run));
+    }
     body {
         margin-left: 6%;
         margin-right: 6%;
@@ -26,8 +41,21 @@
     }
     p {
         font-family: serif;
-        font-size: 3vw;
         text-align: justify;
+        --min-vw-px: calc(var(--min-vw) * 1px);
+        --min-p-font-size-px: calc(var(--min-p-font-size) * 1px);
+
+        --fluid-font-size-px: calc(
+            var(--slopep) * (100vw - var(--min-vw-px)) + var(--min-p-font-size-px)
+        );
+
+        --max-p-font-size-px: calc(var(--max-p-font-size) * 1px);
+
+        font-size: clamp(
+            var(--min-p-font-size-px),
+            var(--fluid-font-size-px),
+            var(--max-p-font-size-px)
+        );
     }
 
 </style>

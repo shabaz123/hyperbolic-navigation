@@ -2,61 +2,162 @@
 <html lang="en">
 <head>
     <title>Hyperbolic Navigation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 
 
 <!-- css -->
 <style>
-    :root {
-        --min-vw: 414;
-        --max-vw: 768;
-        --min-h1-font-size: 32;
-        --max-h1-font-size: 48;
-        --min-p-font-size: 18;
-        --max-p-font-size: 28;
 
-        --rise: calc(var(--max-h1-font-size) - var(--min-h1-font-size));
-        --run: calc(var(--max-vw) - var(--min-vw));
-        --slope: calc(var(--rise) / var(--run));
-        
-        --risep: calc(var(--max-p-font-size) - var(--min-p-font-size));
-        --slopep: calc(var(--risep) / var(--run));
+    @media print {
+        body {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
-    body {
-        margin-left: 6%;
-        margin-right: 6%;
+    @media (min-width:320px) {
+        body {
+            margin-left: 6%;
+            margin-right: 6%;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 1.7em;
+            text-align: justify;
+        }
+        h2 {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 1.5em;
+            text-align: justify;
+        }
+        p {
+            font-family: serif;
+            text-align: justify;
+            font-size: 1.3em;
+        }
     }
-    h1 {
-        font-family: sans-serif;
-        font-weight: bold;
-        font-size: 5vw;
-        text-align: justify;
+    
+    @media (min-width:481px) {
+        body {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 1.7em;
+            text-align: justify;
+        }
+        h2 {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 1.5em;
+            text-align: justify;
+        }
+        p {
+            font-family: serif;
+            text-align: justify;
+            font-size: 1.3em;
+        }
     }
-    h2 {
-        font-family: sans-serif;
-        font-weight: bold;
-        font-size: 4vw;
-        text-align: justify;
-    }
-    p {
-        font-family: serif;
-        text-align: justify;
-        --min-vw-px: calc(var(--min-vw) * 1px);
-        --min-p-font-size-px: calc(var(--min-p-font-size) * 1px);
 
-        --fluid-font-size-px: calc(
-            var(--slopep) * (100vw - var(--min-vw-px)) + var(--min-p-font-size-px)
-        );
-
-        --max-p-font-size-px: calc(var(--max-p-font-size) * 1px);
-
-        font-size: clamp(
-            var(--min-p-font-size-px),
-            var(--fluid-font-size-px),
-            var(--max-p-font-size-px)
-        );
+    @media (min-width:641px) {
+        body {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 1.9em;
+            text-align: justify;
+        }
+        h2 {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 1.7em;
+            text-align: justify;
+        }
+        p {
+            font-family: serif;
+            text-align: justify;
+            font-size: 1.5em;
+        }
     }
+
+    @media (min-width:961px) {
+        body {
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 1.9em;
+            text-align: justify;
+        }
+        h2 {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 1.7em;
+            text-align: justify;
+        }
+        p {
+            font-family: serif;
+            text-align: justify;
+            font-size: 1.5em;
+        }
+    }
+
+    @media (min-width:1025px) {
+        body {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 1.9em;
+            text-align: justify;
+        }
+        h2 {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 1.7em;
+            text-align: justify;
+        }
+        p {
+            font-family: serif;
+            text-align: justify;
+            font-size: 1.5em;
+        }
+    }
+
+    @media (min-width:1281px) {
+        body {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 1.9em;
+            text-align: justify;
+        }
+        h2 {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 1.7em;
+            text-align: justify;
+        }
+        p {
+            font-family: serif;
+            text-align: justify;
+            font-size: 1.5em;
+        }
+    }
+
 
 </style>
 </head>
